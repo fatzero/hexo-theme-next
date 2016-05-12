@@ -182,7 +182,7 @@
             }
         }
         })()'>
-        &nbsp;2^10
+        &nbsp;boom!
       </a>
    </span>
 </div>
@@ -200,10 +200,22 @@
 </div>
 -->
 
+<!--
 <div class="theme-info">Statistics
     <span id="busuanzi_container_site_pv" style='display:none'><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
     <span id="busuanzi_container_site_uv" style='display:none'><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
     <span id="busuanzi_container_page_pv" style='display:none'><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span></span>
+</div>
+-->
+<div class="theme-info">
+  {% if theme.busuanzi_count.site_pv %}
+    <span class="site-pv">{{ theme.busuanzi_count.site_pv_header }}
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+      {{ theme.busuanzi_count.site_pv_footer }}
+    </span>
+  {% endif %}
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>

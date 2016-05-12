@@ -124,8 +124,8 @@ font:
 # Social links
 social:
   Github: https://github.com/isudox
-  Twitter: https://twitter.com/isudox
   StackOverflow: https://stackoverflow.com/users/4305743/sudoz
+  Twitter: https://twitter.com/isudox
 
 
 # Social Links Icons
@@ -161,7 +161,7 @@ toc:
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
-#creative_commons:
+creative_commons: by-nc-nd
 
 
 sidebar:
@@ -212,7 +212,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
+highlight_theme: night eighties
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
