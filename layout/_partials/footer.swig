@@ -10,7 +10,31 @@
 -->
   <span class="with-love">by</span>
   <span class="author" itemprop="copyrightHolder"><a class="theme-link" href="mailto:me@isudox.com">{{ config.author }}</a></span>
-  <span class="with-love">
+</div>
+
+<div class="powered-by">
+  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
+</div>
+
+<!--
+<div class="theme-info">
+  {{ __('footer.theme') }} -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.{{ theme.scheme }}
+  </a>
+</div>
+-->
+
+<!--
+<div class="theme-info">Statistics
+    <span id="busuanzi_container_site_pv" style='display:none'><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
+    <span id="busuanzi_container_site_uv" style='display:none'><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
+    <span id="busuanzi_container_page_pv" style='display:none'><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span></span>
+</div>
+-->
+<div class="theme-info">
+  {% if theme.busuanzi_count.site_pv %}
+    <span class="site-pv">{{ theme.busuanzi_count.site_pv_header }}
       <a class="theme-link" href='javascript:(
         function go() {
         var songs = [
@@ -182,37 +206,11 @@
             }
         }
         })()'>
-        &nbsp;boom!
+        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+        <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
       </a>
-   </span>
-</div>
 
-<div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
-</div>
-
-<!--
-<div class="theme-info">
-  {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.{{ theme.scheme }}
-  </a>
-</div>
--->
-
-<!--
-<div class="theme-info">Statistics
-    <span id="busuanzi_container_site_pv" style='display:none'><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
-    <span id="busuanzi_container_site_uv" style='display:none'><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;-</span>
-    <span id="busuanzi_container_page_pv" style='display:none'><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span></span>
-</div>
--->
-<div class="theme-info">
-  {% if theme.busuanzi_count.site_pv %}
-    <span class="site-pv">{{ theme.busuanzi_count.site_pv_header }}
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
       {{ theme.busuanzi_count.site_pv_footer }}
     </span>
   {% endif %}

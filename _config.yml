@@ -187,6 +187,7 @@ links_layout: block
 links_icon: bookmark
 links:
   # Git Book: http://git-scm.com/book/
+  Go Doc: https://golang.org/doc/
   LeetCode: https://leetcode.com/problemset/algorithms/
   # Guava Wiki: https://github.com/google/guava/wiki/
   # Markdown Syntax: https://daringfireball.net/projects/markdown/syntax/
