@@ -125,7 +125,8 @@ font:
 social:
   Github: https://github.com/isudox
   StackOverflow: https://stackoverflow.com/users/4305743/sudoz
-  Twitter: https://twitter.com/isudox
+  # Twitter: https://twitter.com/isudox
+  Google+: https://plus.google.com/u/0/107137721030996012853
 
 
 # Social Links Icons
@@ -141,6 +142,7 @@ social_icons:
   Twitter: twitter
   StackOverflow: stack-overflow
   Weibo: weibo
+  Google+: google-plus-official
 
 
 # Sidebar Avatar
