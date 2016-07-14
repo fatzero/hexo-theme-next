@@ -125,9 +125,10 @@ font:
 #social:
   #LinkLabel: Link
 # Social links
-social:
-  Github: https://github.com/isudox
-  StackOverflow: https://stackoverflow.com/users/4305743/sudoz
+# social:
+  # Github: https://github.com/isudox
+  # LeetCode: https://leetcode.com/sudoz/
+  # StackOverflow: https://stackoverflow.com/users/4305743/sudoz
   # Twitter: https://twitter.com/isudox
   # Google+: https://plus.google.com/u/0/107137721030996012853
 
@@ -142,6 +143,7 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   Github: github
+  LeetCode: leetcode
   Twitter: twitter
   StackOverflow: stack-overflow
   Weibo: weibo
@@ -430,7 +432,6 @@ vendors:
   # https://www.algolia.com
   algolia_instant_js:
   algolia_instant_css:
-
 
 
 # Assets

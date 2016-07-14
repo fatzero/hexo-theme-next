@@ -2,7 +2,7 @@
 
 /* 自定义webkit滚动条样式 */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 	height: 10px;
 }
 
@@ -63,4 +63,16 @@
 
 ::-webkit-scrollbar-button:end:active {
 	background: url(../images/scrollbar_arrow.png) no-repeat -30px -18px;
+}
+
+/* 顶部阅读进度条 */
+.top-scroll-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4500;
+	display: none;
+	width: 0;
+	height: 2px;
+	background: #6d6d6d;
 }
